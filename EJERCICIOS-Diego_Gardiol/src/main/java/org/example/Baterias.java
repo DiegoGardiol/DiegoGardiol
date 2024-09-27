@@ -110,4 +110,35 @@ public class Baterias {
             }
         }
     }
+
+    public void ejercicio6() {
+        System.out.println("Tienes tomate");
+        Scanner entrada = new Scanner(System.in);
+        String tomate = entrada.next();
+
+        if (tomate.equalsIgnoreCase("si")){
+            System.out.println("¡No tenemos que ir a comprar!\n");
+            System.out.println("Tienes aceite");
+            String aceite = entrada.next();
+
+            if (aceite.equalsIgnoreCase("si")){
+                System.out.println("¡No tenemos que ir a comprar!\n");
+            }
+            else {
+                System.out.println("¡Tenemos que ir a comprar!");
+                System.out.println("Tienes jamon");
+                String jamon = entrada.next();
+                if (jamon.equalsIgnoreCase("si")){
+                    System.out.println("¡No tenemos que ir a comprar!\n");
+                }
+                else {
+                    System.out.println("¡Tenemos que ir a comprar!");
+                }
+            }
+        }
+        else {
+            System.out.println("¡Tenemos que ir a comprar!");
+        }
+
+    }
 }
