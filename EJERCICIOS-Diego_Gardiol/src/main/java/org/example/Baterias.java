@@ -103,15 +103,20 @@ public class Baterias {
             } else {
                 if (num3 == num2) {
                     System.out.println("ERROR: hay números introducidos que son iguales");
-                }
-                else {
-                   //COMPARACION DE NUMEROS
+                } else {
+                    if (num1 > num2 && num2 > num3) {
+                        System.out.println(num3 + " es el menor");
+                    } else if (num1 < num2 && num2 < num3) {
+                        System.out.println(num2 + " es el menor");
+                    } else if (num1 < num2 && num2 < num3) {
+                        System.out.println(num1 + " es el menor");
+                    }
                 }
             }
         }
     }
 
-    public void ejercicio6() {
+    public void ejercicio6(){
         System.out.println("Tienes tomate");
         Scanner entrada = new Scanner(System.in);
         String tomate = entrada.next();
@@ -139,6 +144,8 @@ public class Baterias {
         else {
             System.out.println("¡Tenemos que ir a comprar!");
         }
-
     }
 }
+
+
+
