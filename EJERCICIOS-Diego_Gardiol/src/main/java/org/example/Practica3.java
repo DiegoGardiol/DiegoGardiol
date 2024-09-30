@@ -2,24 +2,29 @@ package org.example;
 import java.util.Scanner;
 public class Practica3 {
     public void practica3(){
-        System.out.println("******INTRODUCE TU NOMBRE******");//Aparece por pantalla el texto de introducir nombre
+        System.out.println("******INTRODUCE TU NOMBRE******");
 
         Scanner entrada = new Scanner(System.in);
-        String nombre = entrada.next();//Lee la entrada de el teclado y lo guarda en una variable nombre en formato string
+        String nombre = entrada.next(); // Lee el nombre
 
-        System.out.println("Hola "+ nombre + ". INTRODUCE TU EDAD:");//Aparecera por pantalla el texto + la variable nombre para mostrar el valor de la variable
-        int edad = entrada.nextInt();//Ahora leemos la entrada de el teclado y guardarlo en la variable edad en formato int
+        int edad = -1; // Inicializa la variable edad con un valor no válido
+        while (edad < 0) { // Continúa solicitando la edad mientras sea negativa
+            System.out.println("Hola " + nombre + ". INTRODUCE TU EDAD:");
+            edad = entrada.nextInt(); // Lee la entrada de edad
 
-        if (edad >= 18){//Si la variable edad es igual o mayor a 18
-            System.out.println("Enhorabuena "+ nombre + ". Puedes votar.");//Texto si la condicion se cumple
-        }
-        else {//Si no se cumple
-            int anyosFaltantes = 18 - edad;//Establezco una variable int anyosFaltantes que su valor sera 18 - la variable edad
-            System.out.println("****************************************************************");
-            System.out.println("Lo siento "+ nombre + ". No puedes votar.");//Aparece por pantalla el resultado de si la condicion no se cumple
-            System.out.println("Te faltan "+ anyosFaltantes + " años para ser mayor de edad.");//Aparece por pantalla los años faltantes
-            System.out.println("****************************************************************");
+            if (edad < 0) {
+                System.out.println("ERROR. Valor de edad incorrecto. Por favor, introduce una edad válida.");
+            }
         }
 
+        if (edad >= 18) { // Si la edad es igual o mayor a 18
+            System.out.println("Enhorabuena " + nombre + ". Puedes votar.");
+        } else { // Si no cumple la condición
+            int anyosFaltantes = 18 - edad; // Calcula los años faltantes
+            System.out.println("****************************************************************");
+            System.out.println("Lo siento " + nombre + ". No puedes votar.");
+            System.out.println("Te faltan " + anyosFaltantes + " años para ser mayor de edad.");
+            System.out.println("****************************************************************");
+        }
     }
 }
