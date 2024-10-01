@@ -1,7 +1,9 @@
 package org.example;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
 public class Practica3 {
-    public void practica3(){
+    public void practica3() {
         System.out.println("******INTRODUCE TU NOMBRE******");
 
         Scanner entrada = new Scanner(System.in);
@@ -10,10 +12,16 @@ public class Practica3 {
         int edad = -1; // Inicializa la variable edad con un valor no válido
         while (edad < 0) { // Continúa solicitando la edad mientras sea negativa
             System.out.println("Hola " + nombre + ". INTRODUCE TU EDAD:");
-            edad = entrada.nextInt(); // Lee la entrada de edad
 
-            if (edad < 0) {
-                System.out.println("ERROR. Valor de edad incorrecto. Por favor, introduce una edad válida.");
+            try {
+                edad = entrada.nextInt(); // Lee la entrada de edad
+
+                if (edad < 0) {
+                    System.out.println("ERROR. Valor de edad incorrecto. Por favor, introduce una edad válida.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("ERROR. Debes introducir un número válido para la edad.");
+                entrada.next(); // Limpiar el buffer del scanner
             }
         }
 
