@@ -7,7 +7,19 @@ public class Practica3 {
         System.out.println("******INTRODUCE TU NOMBRE******");
 
         Scanner entrada = new Scanner(System.in);
-        String nombre = entrada.next(); // Lee el nombre
+        String nombre = "";
+        boolean nombreValido = false;
+
+        // Validar que el nombre contenga solo letras
+        while (!nombreValido) {
+            nombre = entrada.next(); // Lee el nombre
+
+            if (nombre.matches("[a-zA-Z]+")) { // Verifica si el nombre solo contiene letras
+                nombreValido = true;
+            } else {
+                System.out.println("ERROR. El nombre solo debe contener letras. Inténtalo de nuevo:");
+            }
+        }
 
         int edad = -1; // Inicializa la variable edad con un valor no válido
         while (edad < 0) { // Continúa solicitando la edad mientras sea negativa
