@@ -1,0 +1,44 @@
+package org.example;
+
+public class CadenaDeCaracteres {
+
+    public void ejercicio1(){
+
+        //0. Muestra el texto original introducido (System.out.println).
+        System.out.println("0. Muestra el texto original introducido (System.out.println).");
+        System.out.println("Este es el texto original\n");
+
+        //1. Muestra la longitud del texto introducido (length()).
+        String texto = "Longuitud del texto introducido";
+        System.out.println("1. Muestra la longitud del texto introducido (length()).");
+        System.out.println("La longuitud de *Longuitud del texto introducido* es de: " + texto.length() + " caracteres\n");
+
+        //2. Elimina los espacios del texto (si los hay) y muestra como queda (replace(,)).
+        System.out.println("2. Elimina los espacios del texto (si los hay) y muestra como queda (replace(,)).");
+        System.out.println("Texto con espacios");
+        String palabra1 = "Texto con espacios";
+        String palabra2 = palabra1.replace( " ","" );
+        System.out.println("El texto sin espacios es: " + palabra2 + "\n");
+
+        //3. Divide la cadena de texto en dos partes iguales (por la mitad) para posteriormente concatenarlas y mostrarlas de nuevo, pero con el siguiente formato: "Primera mitad del texto es " + mitad1 + "y la segunda mitad del texto es " + mitad2. (substring + concat).
+        System.out.println("3. Divide la cadena de texto en dos partes iguales (por la mitad) para posteriormente concatenarlas y mostrarlas de nuevo, pero con el siguiente formato: \"Primera mitad del texto es \" + mitad1 + \"y la segunda mitad del texto es \" + mitad2. (substring + concat).");
+        String frase4 = "Esta es la frase que hay que dividir. Y esta es la segunda mitad";
+        String mitad1 = frase4.substring(0,38);
+        String mitad2 = frase4.substring(39);
+        String mitadC = mitad1.concat(mitad2);
+
+        System.out.println("La primera mitad del texto es: "+ mitad1 + "\ny la segunda mitad del texto es:" + mitad2);
+        System.out.println("Este es el texto concatenado: " + mitadC + "\n");
+
+        //4. Transforma la cadena de texto a mayúsculas (toUpperCase()).
+        System.out.println("4. Transforma la cadena de texto a mayúsculas (toUpperCase()).");
+        String palabra = "Texto de minusculas a mayusculas";
+        String palabraM = palabra.toUpperCase();
+        System.out.println("La conversion de la frase: "+ palabra + "\nA mayusculas es: " + palabraM);
+    }
+
+    public void ejercicio2(){
+
+        System.out.println("EJERCICIO 2. Desarrolla un programa que permita leer 2 cadenas de caracteres (palabras) diferentes y nos diga cual es la más larga. ");
+    }
+}
