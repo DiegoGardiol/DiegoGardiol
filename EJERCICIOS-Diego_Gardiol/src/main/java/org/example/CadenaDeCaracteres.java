@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.Scanner;
-
 public class CadenaDeCaracteres {
 
     public void ejercicio1(){
@@ -53,6 +52,7 @@ public class CadenaDeCaracteres {
 
         int cadenaN2 = cadena2.length();
         int cadenaN1 = cadena1.length();
+
         if (cadenaN1 == cadenaN2)
         {
             System.out.println("Las cadenas son iguales: "+ cadenaN1 + " y "+ cadenaN2);
@@ -66,5 +66,32 @@ public class CadenaDeCaracteres {
         }
     }
 
-    
+    public void ejercicio3(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("3. Programa que quite a una variable numérica N sus m últimas cifras.");
+
+        System.out.print("Escribe el valor que tendra `N`: " );
+        int N = entrada.nextInt();
+
+        System.out.print("Escribe el valor que tendra `m`: ");
+        int m = entrada.nextInt();
+
+        if (N < 0 || m < 0){
+            System.out.println("Debes introducir valores positivos");
+        }
+        else {
+
+            System.out.println("Este es el valor de N: " + N);
+            System.out.println("Este es el valor de m: "+ m);
+
+            String valorN = Integer.toString(N);
+
+            int cadena = valorN.length();
+            int cadenaRes = cadena - m;
+
+            String finalito = valorN.substring(0,cadenaRes);
+            System.out.println(finalito);
+        }
+
+    }
 }
