@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class CadenaDeCaracteres {
 
     public void ejercicio1(){
@@ -38,7 +40,31 @@ public class CadenaDeCaracteres {
     }
 
     public void ejercicio2(){
+        Scanner entrada = new Scanner(System.in);
 
         System.out.println("EJERCICIO 2. Desarrolla un programa que permita leer 2 cadenas de caracteres (palabras) diferentes y nos diga cual es la más larga. ");
+
+        System.out.println("Escribe la primera cadena de caracteres:");
+        String cadena1 = entrada.nextLine();
+
+
+        System.out.println("Escribe la segunda cadena de caracteres:");
+        String cadena2 = entrada.nextLine();
+
+        int cadenaN2 = cadena2.length();
+        int cadenaN1 = cadena1.length();
+        if (cadenaN1 == cadenaN2)
+        {
+            System.out.println("Las cadenas son iguales: "+ cadenaN1 + " y "+ cadenaN2);
+        }
+        else {
+            if (cadenaN1 < cadenaN2) {
+                System.out.println("La cadena: " + cadena2 + " es la mas larga, con (" + cadenaN2 + ") caracteres");
+            } else {
+                System.out.println("La cadena: " + cadena1 + " es la mas larga, con (" + cadenaN1 + ") caracteres");
+            }
+        }
     }
+
+    
 }
