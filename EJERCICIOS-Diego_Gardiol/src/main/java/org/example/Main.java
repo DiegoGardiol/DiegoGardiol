@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        controlDeExcepciones EJERCICIO = new controlDeExcepciones();
-        EJERCICIO.ejercicio1();
+        numeromagico EJERCICIO = new numeromagico();
+        EJERCICIO.numeromagico1();
     }
 }
