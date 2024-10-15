@@ -28,25 +28,25 @@ public class EjercicioAmpliacion {
 
         switch(num) {
             case 1:
-                System.out.println("LUNES");
+                System.out.println(num + ". LUNES");
                 break;
             case 2:
-                System.out.println("MARTES");
+                System.out.println(num + ". MARTES");
                 break;
             case 3:
-                System.out.println("MIERCOLES");
+                System.out.println(num + ". MIERCOLES");
                 break;
             case 4:
-                System.out.println("JUEVES");
+                System.out.println(num + ". JUEVES");
                 break;
             case 5:
-                System.out.println("VIERNES");
+                System.out.println(num + ". VIERNES");
                 break;
             case 6:
-                System.out.println("SABADO");
+                System.out.println(num + ". SABADO");
                 break;
             case 7:
-                System.out.println("DOMINGO");
+                System.out.println(num + ". DOMINGO");
                 break;
             default:
                 System.out.println("Numero no valido (1-7)");
