@@ -7,14 +7,14 @@ public class calculadora {
     public void calculadora1(){
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("=======================================");
-        System.out.println("==BIENVNIDO A LA CALCULADORA DE DIEGO==");
-        System.out.println("=======================================");
-        System.out.println("(+) --> SUMA                          =");
-        System.out.println("(-) --> RESTA                         =");
-        System.out.println("(/) --> DIVISION                      =");
-        System.out.println("(R) --> RAIZ CUADRADA                 =");
-        System.out.println("=======================================");
+        System.out.println("========================================");
+        System.out.println("==BIENVENID@ A LA CALCULADORA DE DIEGO==");
+        System.out.println("========================================");
+        System.out.println("(+) --> SUMA                           =");
+        System.out.println("(-) --> RESTA                          =");
+        System.out.println("(/) --> DIVISION                       =");
+        System.out.println("(R) --> RAIZ CUADRADA                  =");
+        System.out.println("========================================");
 
 
         int op1 = 0;
@@ -66,7 +66,7 @@ public class calculadora {
             }
         }
 
-        System.out.println("=======================================");
+        System.out.println("========================================");
 
         switch(sig) {
             case "+":
@@ -86,10 +86,10 @@ public class calculadora {
                 System.out.println("RESULTADO: " + resultadoR);
                 break;
             default:
-                System.out.println("**EROR NO VALIDO**");
+                System.out.println("**ERROR NO VALIDO SIMBOLO INEXISTENTE**");
         }
 
-        System.out.println("=======================================");
+        System.out.println("========================================");
 
     }
 }
