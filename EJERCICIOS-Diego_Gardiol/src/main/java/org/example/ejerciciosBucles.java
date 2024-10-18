@@ -39,7 +39,7 @@ public class ejerciciosBucles {
 
     public void ejer4(){
         String hola = "HOLA";
-        
+
         for (int i = 0; i < hola.length(); i++) {
             System.out.println(hola.charAt(i));
         }
@@ -47,7 +47,7 @@ public class ejerciciosBucles {
 
     public void ejer5(){
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Introduce un numero para sacar su tabla:");
+        System.out.print("Introduce un número para sacar su tabla:");
         int num = entrada.nextInt();
 
         for(int i=0; i<11; i++){
