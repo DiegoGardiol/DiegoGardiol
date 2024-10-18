@@ -31,13 +31,15 @@ public class ejerciciosBucles {
     public void ejer3() {
 
         for(int i=0;i<50;i++){
-            
+            if(i % 3 == 0){
+                System.out.println(i);
+            }
         }
     }
 
     public void ejer4(){
         String hola = "HOLA";
-
+        
         for (int i = 0; i < hola.length(); i++) {
             System.out.println(hola.charAt(i));
         }
@@ -52,6 +54,10 @@ public class ejerciciosBucles {
             int res = i * num;
             System.out.println(i + "x"+num + "="+ res);
         }
+    }
+
+    public void ejer6(){
+
     }
 }
 
