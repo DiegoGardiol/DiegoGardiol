@@ -57,6 +57,25 @@ public class ejerciciosBucles {
     }
 
     public void ejer6(){
+        Scanner entrada = new Scanner(System.in);
+        int suma = 0;
+        System.out.print("¿Cuántos números quieres sumar?: ");
+        int N = entrada.nextInt();
+
+        for (int i = 1; i <= N; i++) {
+            System.out.print("Inserta el nº" + i + ": ");
+            int num = entrada.nextInt();
+            suma += num;
+        }
+
+        System.out.println("El resultado es: " + suma);
+    }
+
+    public void ejer7(){
+
+    }
+
+    public void ejer8(){
 
     }
 }
