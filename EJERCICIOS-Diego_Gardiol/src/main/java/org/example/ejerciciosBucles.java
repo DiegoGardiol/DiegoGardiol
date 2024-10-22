@@ -72,11 +72,30 @@ public class ejerciciosBucles {
     }
 
     public void ejer7(){
-
+        Scanner entrada = new Scanner(System.in);
+        int factorial=1;
+        System.out.print("Número a calcular su factorial: ");
+        int n = entrada.nextInt();
+        for (int i = 1; i <= n; i++) {
+          factorial *= i;
+        }
+        System.out.println("El factorial de " + n + " es: " + factorial);
     }
 
     public void ejer8(){
+        Scanner entrada = new Scanner(System.in);
 
+        System.out.print("Ingrese una cadena para invertir: ");
+        String cadena = entrada.nextLine();
+
+        String cadenaInvertida = "";
+
+
+        for (int i = cadena.length() - 1; i >= 0; i--) {
+            cadenaInvertida += cadena.charAt(i);
+        }
+
+        System.out.println("La cadena invertida es: " + cadenaInvertida);
     }
 }
 
