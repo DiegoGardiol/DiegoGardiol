@@ -37,18 +37,45 @@ public class ClaseRamdom {
         Random random = new Random();
 
         System.out.print("Establece el rango mínimo: ");
-        int ent1 = entrada.nextInt();
+        int min = entrada.nextInt();
 
-        System.out.print("Establece el rango máximo:");
-        int ent2 = entrada.nextInt();
+        int max;
+        do {
+            System.out.print("Establece el rango máximo: ");
+            max = entrada.nextInt();
+            if (max <= min) {
+                System.out.println("El máximo debe ser mayor que el mínimo. Intenta de nuevo.");
+            }
+        } while (max <= min);
 
-        System.out.print("Cuantos numeros aleatorios quieres: ");
-        int ent3 = entrada.nextInt();
+        System.out.print("¿Cuántos números aleatorios quieres?: ");
+        int cantidad = entrada.nextInt();
+
+        System.out.println("Números aleatorios generados:");
+        for (int i = 0; i < cantidad; i++) {
+            int numeroAleatorio = random.nextInt(max - min + 1) + min;
+            System.out.println(numeroAleatorio);
+        }
+
+        entrada.close();
+    }
+
+    public void ejer4(){
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int tam = caracteres.length();
+
+        Random random = new Random();
 
 
+        int longitudContrasena = random.nextInt(3) + 6;
 
+        String contrasena = "";
+        for (int i = 0; i < longitudContrasena; i++) {
+            int indice = random.nextInt(tam);
+            contrasena += caracteres.charAt(indice);
+        }
 
-
-
+        System.out.println("Tu contraseña aleatoria es: " + contrasena);
     }
 }
+
