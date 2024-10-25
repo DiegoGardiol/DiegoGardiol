@@ -1,5 +1,6 @@
 package org.example;
 
+import java.lang.ref.Cleaner;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -169,11 +170,8 @@ public class PreExamen {
             catch (ArithmeticException e){
                 System.out.println("**ERROR: Solo se permiten números enteros y positivos. Inténtalo de nuevo.**");
                 scanner.next();
+
             }
         }
-        for (){
-            
-        }
-
     }
 }
