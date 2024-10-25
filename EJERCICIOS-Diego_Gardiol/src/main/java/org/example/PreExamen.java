@@ -28,9 +28,9 @@ public class PreExamen {
 
     public void ejer2() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce la base (número real): ");
+        System.out.print("Introduce la base: ");
         double base = scanner.nextDouble();
-        System.out.print("Introduce el exponente (entero positivo): ");
+        System.out.print("Introduce el exponente: ");
         int exponente = scanner.nextInt();
 
         double resultado = 1;
@@ -52,7 +52,7 @@ public class PreExamen {
         for (int i = 1; i <= meses; i++) {
             System.out.println("Mes " + i + ": " + pago + "€");
             totalPagado += pago;
-            pago *= 2;  // El pago se duplica cada mes
+            pago *= 2;
         }
 
         System.out.println("Total a pagar después de " + meses + " meses: " + totalPagado + "€");
