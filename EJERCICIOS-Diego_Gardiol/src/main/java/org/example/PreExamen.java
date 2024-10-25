@@ -150,7 +150,7 @@ public class PreExamen {
     public void ejer7(){
         Scanner scanner = new Scanner(System.in);
 
-        int termino;
+        int termino = 0;
 
         boolean salidavalida = false;
         while (!salidavalida) {
@@ -173,5 +173,14 @@ public class PreExamen {
 
             }
         }
+        int a = 0, b = 1, c;
+        System.out.print("Secuencia de Números: ");
+        for (int i = 0; i < termino; i++) {
+            System.out.print(a + " ");
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        System.out.println();
     }
 }
