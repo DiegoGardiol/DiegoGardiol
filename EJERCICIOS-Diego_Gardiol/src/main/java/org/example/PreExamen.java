@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PreExamen {
@@ -143,5 +144,36 @@ public class PreExamen {
         System.out.println("Altura media: " + alturaMedia + " cm");
         System.out.println("Cantidad de alumnos mayores de 18 años: " + mayoresDe18);
         System.out.println("Cantidad de alumnos con altura superior a 175 cm: " + masDe175cm);
+    }
+
+    public void ejer7(){
+        Scanner scanner = new Scanner(System.in);
+
+        int termino;
+
+        boolean salidavalida = false;
+        while (!salidavalida) {
+            try {
+                System.out.print("Cuantos términos de secuencia deseas ver (números enteros y positivos): ");
+                termino = scanner.nextInt();
+                salidavalida = true;
+
+                if (termino <= 0){
+                    System.out.println("**ERROR: Solo se permiten números enteros y positivos. Inténtalo de nuevo.**");
+                    salidavalida=false;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("**ERROR: Solo se permiten números enteros y positivos. Inténtalo de nuevo.**");
+                scanner.next();
+            }
+            catch (ArithmeticException e){
+                System.out.println("**ERROR: Solo se permiten números enteros y positivos. Inténtalo de nuevo.**");
+                scanner.next();
+            }
+        }
+        for (){
+
+        }
+
     }
 }
