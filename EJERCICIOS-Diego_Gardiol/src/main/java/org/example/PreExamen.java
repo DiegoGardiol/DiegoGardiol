@@ -170,7 +170,6 @@ public class PreExamen {
             catch (ArithmeticException e){
                 System.out.println("**ERROR: Solo se permiten números enteros y positivos. Inténtalo de nuevo.**");
                 scanner.next();
-
             }
         }
         int a = 0, b = 1, c;

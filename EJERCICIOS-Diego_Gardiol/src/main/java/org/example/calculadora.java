@@ -86,6 +86,7 @@ public class calculadora {
                 System.out.println("RESULTADO: " + resultadoR);
                 break;
             default:
+
                 System.out.println("**ERROR NO VALIDO SIMBOLO INEXISTENTE**");
         }
 
