@@ -75,6 +75,8 @@ public class ejerciciosBucles {
         Scanner entrada = new Scanner(System.in);
         int factorial=1;
         System.out.print("Número a calcular su factorial: ");
+
+        
         int n = entrada.nextInt();
         for (int i = 1; i <= n; i++) {
           factorial *= i;
