@@ -23,4 +23,21 @@ public class Arrays {
         System.out.println("\nLa suma de los elementos es: " + suma);
         System.out.println("*****************************************");
     }
+    public void ejercicio2(){
+
+        int[] array = {10,9,8,7,6,5,4,3,2,1};
+
+        System.out.println("\n************************");
+        System.out.println("ARRAY NORMAL:");
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println("\n************************");
+
+        System.out.println("ARRAY INVERTIDO:");
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println("\n************************");
+    }
 }
