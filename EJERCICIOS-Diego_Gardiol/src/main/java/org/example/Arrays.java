@@ -29,8 +29,8 @@ public class Arrays {
 
         System.out.println("\n************************");
         System.out.println("ARRAY NORMAL:");
-        for (int num : array) {
-            System.out.print(num + " ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
         System.out.println("\n************************");
 
