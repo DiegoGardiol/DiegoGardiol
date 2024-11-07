@@ -135,7 +135,7 @@ public class Arrays {
 
             System.out.println("**ESTE ES TU ARRAY**");
             for(int n : array) {
-                System.out.print(n +" / ");
+                System.out.print(n +", ");
             }
         }
 }
