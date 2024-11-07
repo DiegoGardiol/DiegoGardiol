@@ -128,12 +128,12 @@ public class Arrays {
             Scanner entrada = new Scanner(System.in);
 
             System.out.println("**ESTABLECE TU ARRAY**");
-            for(int n : array) {
-                System.out.print("VALOR:");
-                array[n] = entrada.nextInt();
+            for (int i = 0; i < array.length; i++) {
+                System.out.print("VALOR " + i + ": ");
+                array[i] = entrada.nextInt();
             }
 
-            System.out.println("ESTE ES TU ARRAY:");
+            System.out.println("**ESTE ES TU ARRAY**");
             for(int n : array) {
                 System.out.print(n +" / ");
             }
