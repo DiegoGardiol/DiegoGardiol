@@ -82,10 +82,30 @@ public class Arrays {
             int[] array = {1, 3, 5, 7 ,9};
             Scanner entrada = new Scanner(System.in);
 
-            System.out.print("Ingrese el índice a eliminar: ");
+            System.out.println("ARRAY INICIAL");
+
+            for (int i = 0; i < array.length; i++) {
+                System.out.print(array[i] + " / ");
+            }
+            System.out.println("");
+            System.out.println("");
+            System.out.println("POSICIONES");
+            System.out.println("0 / 1 / 2 / 3 / 4 /");
+
+            System.out.println("");
+            System.out.print("Ingrese el índice a eliminar (0-4): ");
             int indx = entrada.nextInt();
 
-            
+
+            if (indx < 0 || indx > 4){
+                System.out.println("**ERROR**. El array solo cuenta con 4 posiciones.");
+            }
+            else {
+
+            }
+
+
+
 
 
         }
