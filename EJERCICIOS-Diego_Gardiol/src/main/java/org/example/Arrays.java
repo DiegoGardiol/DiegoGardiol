@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Arrays {
     public void ejercicio1(){
+        //SUMAR TODOS LOS VALORES DE UN ARRAY ALEATORIO DE 8 VALORES
 
         int[] array = new int[8]; //Array de 8 elementos de tipo int
 
@@ -25,6 +26,7 @@ public class Arrays {
         System.out.println("*****************************************");
     }
     public void ejercicio2(){
+        //INVERTIR ARRAY
 
         int[] array = {10,9,8,7,6,5,4,3,2,1};
 
@@ -43,6 +45,7 @@ public class Arrays {
     }
 
         public void ejercicio3() {
+        //CONTAR NUMEROD E VECES QUE APARECE UN DIGITO EN UN ARRAY ALEATORIO
             int[] numeros = new int[25];
             Random random = new Random();
 
@@ -79,6 +82,7 @@ public class Arrays {
         }
 
         public void ejercicio4(){
+        //ELIMINAR POSICION DE UN ARRAY
             int[] array = {1, 3, 5, 7 ,9};
             Scanner entrada = new Scanner(System.in);
 
@@ -101,7 +105,7 @@ public class Arrays {
                 System.out.println("**ERROR**. El array solo cuenta con 4 posiciones.");
             }
             else {
-                
+
                 int[] arrayN = new int[array.length - 1];
 
                 for (int i = 0, j = 0; i < array.length; i++) {
@@ -117,6 +121,22 @@ public class Arrays {
         }
 
         public void ejercicio5(){
+        //MOVER UNA POSICION A LA DERECHA EL ARRAY
+
+        int[] array = new int[10];
+
+            Scanner entrada = new Scanner(System.in);
+
+            System.out.println("**ESTABLECE TU ARRAY**");
+            for(int n : array) {
+                System.out.print("VALOR:");
+                array[n] = entrada.nextInt();
+            }
+
+            System.out.println("ESTE ES TU ARRAY:");
+            for(int n : array) {
+                System.out.print(n +" / ");
+            }
 
         }
 
