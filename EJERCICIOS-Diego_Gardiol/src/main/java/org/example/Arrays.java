@@ -137,7 +137,5 @@ public class Arrays {
             for(int n : array) {
                 System.out.print(n +" / ");
             }
-
         }
-
 }
