@@ -93,7 +93,7 @@ public class Arrays {
             System.out.println("0 / 1 / 2 / 3 / 4 /");
 
             System.out.println("");
-            System.out.print("Ingrese el índice a eliminar (0-4): ");
+            System.out.print("Ingrese la posicion a eliminar (0-4): ");
             int indx = entrada.nextInt();
 
 
@@ -101,12 +101,22 @@ public class Arrays {
                 System.out.println("**ERROR**. El array solo cuenta con 4 posiciones.");
             }
             else {
+                
+                int[] arrayN = new int[array.length - 1];
 
+                for (int i = 0, j = 0; i < array.length; i++) {
+                    if (i != indx) {
+                        arrayN[j++] = array[i];
+                    }
+                }
+
+                for (int i = 0; i < arrayN.length; i++) {
+                    System.out.print(arrayN[i] + " / ");
+                }
             }
+        }
 
-
-
-
+        public void ejercicio5(){
 
         }
 
