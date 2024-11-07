@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Arrays {
     public void ejercicio1(){
@@ -40,4 +41,53 @@ public class Arrays {
         }
         System.out.println("\n************************");
     }
+
+        public void ejercicio3() {
+            int[] numeros = new int[25];
+            Random random = new Random();
+
+            for (int i = 0; i < numeros.length; i++) {
+                numeros[i] = random.nextInt(101);
+            }
+
+            System.out.print("Array generado: ");
+            for (int i = 0; i < numeros.length; i++) {
+                System.out.print(numeros[i] + " / ");
+            }
+            System.out.println();
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Ingresa un dígito para buscar [0-9]: ");
+            String digitoBuscado = scanner.next();
+
+            if (digitoBuscado.length() != 1 || !Character.isDigit(digitoBuscado.charAt(0))) {
+                System.out.println("Por favor, ingresa solo un dígito (0-9).");
+                return;
+            }
+
+            int contador = 0;
+            for (int num : numeros) {
+                String numeroComoTexto = String.valueOf(num);
+                for (char c : numeroComoTexto.toCharArray()) {
+                    if (String.valueOf(c).equals(digitoBuscado)) {
+                        contador++;
+                    }
+                }
+            }
+
+            System.out.println("El dígito " + digitoBuscado + " aparece " + contador + " veces en el array.");
+        }
+
+        public void ejercicio4(){
+            int[] array = {1, 3, 5, 7 ,9};
+            Scanner entrada = new Scanner(System.in);
+
+            System.out.print("Ingrese el índice a eliminar: ");
+            int indx = entrada.nextInt();
+
+            
+
+
+        }
+
 }
