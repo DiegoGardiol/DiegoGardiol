@@ -1,5 +1,6 @@
 package org.example;
 
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -137,5 +138,9 @@ public class Arrays {
             for(int n : array) {
                 System.out.print(n +", ");
             }
-        }
+
+            System.out.println("");
+            System.out.println("");
+            System.out.println("**ESTE ES TU ARRAY DESPLAZADO HACIA LA DERECHA UNA POSICION**")
+    }
 }
