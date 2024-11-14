@@ -141,7 +141,7 @@ public class Arrays {
 
             System.out.println("");
             System.out.println("");
-            System.out.println("**ESTE ES TU ARRAY DESPLAZADO HACIA LA DERECHA UNA POSICION**");
+            System.out.println("**ESTE ES TU ARRAY DESPLAZADO HACIA LA DERECHA UNA POSICIÓN**");
 
     }
 }
