@@ -152,7 +152,7 @@ public class Arrays {
     }
 
     public void ejercicio6() {
-
+        
 
     }
 
@@ -170,6 +170,5 @@ public class Arrays {
 
 
     public void ejercicio10(){
-        
-    }
+            }
 }
