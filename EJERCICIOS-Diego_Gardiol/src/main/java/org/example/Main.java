@@ -10,6 +10,6 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         Arrays EJERCICIO = new Arrays();
-        EJERCICIO.ejercicio5();
+        EJERCICIO.ejercicio6();
     }
 }
