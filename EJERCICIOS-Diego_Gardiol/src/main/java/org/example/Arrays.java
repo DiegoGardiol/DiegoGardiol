@@ -200,14 +200,77 @@ public class Arrays {
     }
 
     public void ejercicio8(){
+        int[] array = {1, 2, 3, 5};
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("\nARRAY ORIGINAL: ");
+        for (int n : array) {
+            System.out.print(n + " ");
+        }
+
+        System.out.print("\n\nIngresa el número a insertar: ");
+        int numero = scanner.nextInt();
+
+        System.out.print("Ingresa la posición donde insertar (0-" + array.length + "): ");
+        int posicion = scanner.nextInt();
+
+        if (posicion < 0 || posicion > array.length) {
+            System.out.println("**ERROR**. Posición inválida.");
+            return;
+        }
+
+        int[] nuevoArray = new int[array.length + 1];
+
+        for (int i = 0, j = 0; i < nuevoArray.length; i++) {
+            if (i == posicion) {
+                nuevoArray[i] = numero;
+            } else {
+                nuevoArray[i] = array[j++];
+            }
+        }
+
+        System.out.println("ARRAY RESULTANTE: ");
+        for (int n : nuevoArray) {
+            System.out.print(n + " ");
+        }
     }
 
     public void ejercicio9(){
+        String[] palabras = {"java", "programación", "arrays", "ejercicios"};
+        String palabraMasLarga = "";
 
+        for (String palabra : palabras) {
+            if (palabra.length() > palabraMasLarga.length()) {
+                palabraMasLarga = palabra;
+            }
+        }
+
+        System.out.println("\nARRAY DE PALABRAS: ");
+        for (String palabra : palabras) {
+            System.out.print(palabra + " ");
+        }
+
+        System.out.println("\nPalabra más larga: " + palabraMasLarga);
     }
 
 
     public void ejercicio10(){
+        String[] palabras = {"java", "juego", "desarrollo", "arrays", "javascript"};
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\nARRAY DE PALABRAS: ");
+        for (String palabra : palabras) {
+            System.out.print(palabra + " ");
+        }
+
+        System.out.print("\n\nIngresa una letra para buscar: ");
+        char letra = scanner.next().charAt(0);
+
+        System.out.println("\nPALABRAS QUE EMPIEZAN CON '" + letra + "': ");
+        for (String palabra : palabras) {
+            if (palabra.charAt(0) == letra) {
+                System.out.println("- " + palabra);
             }
+        }
+    }
 }
