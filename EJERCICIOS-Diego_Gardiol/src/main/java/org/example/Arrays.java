@@ -152,12 +152,51 @@ public class Arrays {
     }
 
     public void ejercicio6() {
-        
+        int[] array = {1, 2, 3, 2, 1};
+        boolean esSimetrico = true;
 
+        for (int i = 0; i < array.length / 2; i++) {
+            if (array[i] != array[array.length - 1 - i]) {
+                esSimetrico = false;
+                break;
+            }
+        }
+
+        System.out.println("\nARRAY: ");
+        for (int n : array) {
+            System.out.print(n + " ");
+        }
+
+        if (esSimetrico) {
+            System.out.println("\nEs simétrico: SÍ");
+        } else {
+            System.out.println("\nEs simétrico: NO");
+        }
     }
 
     public void ejercicio7(){
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
 
+        int[] combinado = new int[array1.length + array2.length];
+
+        System.arraycopy(array1, 0, combinado, 0, array1.length);
+        System.arraycopy(array2, 0, combinado, array1.length, array2.length);
+
+        System.out.println("\nARRAY 1: ");
+        for (int n : array1) {
+            System.out.print(n + " ");
+        }
+
+        System.out.println("\nARRAY 2: ");
+        for (int n : array2) {
+            System.out.print(n + " ");
+        }
+
+        System.out.println("\nARRAY COMBINADO: ");
+        for (int n : combinado) {
+            System.out.print(n + " ");
+        }
     }
 
     public void ejercicio8(){
