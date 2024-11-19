@@ -30,4 +30,25 @@ public class PRE_MATRICES {
             }
         }
     }
+
+    public void primos(){
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Introduzca el valor m: ");
+        int m = entrada.nextInt();
+        System.out.println("PRIMOS");
+
+        bucle1:
+        for (int i = 2; i <=m ; i++) {
+            for (int j = 2; j < i ; j++) {
+                if (i%j==0){
+                    //brak;
+                    continue bucle1;
+                }
+                System.out.print(i + " ");
+            }
+        }
+
+    }
 }
