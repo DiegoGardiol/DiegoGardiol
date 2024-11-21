@@ -138,7 +138,7 @@ public class matrices {
             }
         }
 
-        
+
         System.out.println("MATRIZ M:");
         for (int[] filas : M) {
             System.out.print("[");
