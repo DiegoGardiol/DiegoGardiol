@@ -43,4 +43,8 @@ public class MatricesNivel1 {
             System.out.println("El número no se encuentra en la matriz.");
         }
     }
+
+    public void e2(){
+        
+    }
 }
