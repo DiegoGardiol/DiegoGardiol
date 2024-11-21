@@ -33,7 +33,7 @@ public class MatricesNivel1 {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (matriz[i][j] == busqueda) {
-                    System.out.println("(" + i + "," + j + ")");
+                    System.out.println("El número " + busqueda + " se encuentra en la posición " + "(" + i + ", " + j + ").");
                     encontrado = true;
                 }
             }
