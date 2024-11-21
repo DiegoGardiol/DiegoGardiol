@@ -49,21 +49,77 @@ public class matrices {
         }
 
 
-        int matrize[][] = new int [5][5];
+    }
+
+    public void ejer2() {
+        int matrize[][] = new int[5][5];
+
 
         for (int i = 0; i < matrize.length; i++) {
             for (int j = 0; j < matrize[i].length; j++) {
-                if(i==j){
-                    matrize[0][j] = 1;
+                if (i == j) {
+                    matrize[i][j] = 1;
+                } else {
+                    matrize[i][j] = 0;
                 }
             }
         }
 
-        for (int[] filas:matrize){
-            for(int columnas:filas){
-                System.out.println(columnas + " ");
+        for (int i = 0; i < matrize.length; i++) {
+            for (int j = 0; j < matrize[i].length; j++) {
+                if (matrize[i][j] == 1) {
+                    System.out.print("X ");
+                } else {
+                    System.out.print("- ");
+                }
             }
-            System.out.println("\n");
+            System.out.println();
+        }
+
+        System.out.println("-----------------------------------");
+
+        for (int[] filas : matrize) {
+            for (int columnas : filas) {
+                System.out.print(columnas + " ");
+            }
+            System.out.print("\n");
+        }
+
+        System.out.println("____________________________________________________");
+        System.out.println("INVERTIDO");
+        System.out.println("____________________________________________________");
+
+        for (int i = 0; i < matrize.length; i++) {
+            for (int j = 0; j < matrize[i].length; j++) {
+                if (i + j == matrize.length - 1) {
+                    matrize[i][j] = 1;
+                } else {
+                    matrize[i][j] = 0;
+                }
+            }
+        }
+
+
+        for (int i = 0; i < matrize.length; i++) {
+            for (int j = 0; j < matrize[i].length; j++) {
+                if (matrize[i][j] == 1) {
+                    System.out.print("X ");
+                } else {
+                    System.out.print("- ");
+                }
+            }
+            System.out.println("");
+        }
+
+        System.out.println("-----------------------------------");
+
+        System.out.println("Matriz numérica:");
+        for (int[] filas : matrize) {
+            for (int columnas : filas) {
+                System.out.print(columnas + " ");
+            }
+            System.out.println();
         }
     }
 }
+
