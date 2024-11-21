@@ -121,5 +121,32 @@ public class matrices {
             System.out.println();
         }
     }
+
+    public void ejer3() {
+        int A[][] = {{1, 5, 9}, {20, 17, 2}};
+        int B[][] = {{6, 7, 5}, {15, 10, 0}};
+
+        int M[][] = new int[A.length][A[0].length];
+
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length; j++) {
+                if (A[i][j] > B[i][j]) {
+                    M[i][j] = A[i][j];
+                } else {
+                    M[i][j] = B[i][j];
+                }
+            }
+        }
+
+        
+        System.out.println("MATRIZ M:");
+        for (int[] filas : M) {
+            System.out.print("[");
+            for (int columnas : filas) {
+                System.out.print(columnas + " ");
+            }
+            System.out.println("]");
+        }
+    }
 }
 
