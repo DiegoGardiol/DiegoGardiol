@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        matrices EJERCICIO = new matrices();
-        EJERCICIO.ejer3();
+        MatricesNivel1 EJERCICIO = new MatricesNivel1();
+        EJERCICIO.e1();
     }
 }
