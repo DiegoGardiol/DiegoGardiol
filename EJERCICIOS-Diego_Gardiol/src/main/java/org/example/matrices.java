@@ -37,14 +37,33 @@ public class matrices {
                 System.out.println("Dime el valor de la posicion (" + i + "," + j + "):");
                 matriz[i][j] = entrada.nextInt();
             }
+        }
 
-            for (int i = 0; i < matriz.length; i++) {
-                for (int j = 0; j < matriz[i].length; j++) {
-                    System.out.println(matriz[i][j]);
-                }
-                System.out.println("");
 
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println(matriz[i][j]);
             }
+            System.out.println("");
+
+        }
+
+
+        int matrize[][] = new int [5][5];
+
+        for (int i = 0; i < matrize.length; i++) {
+            for (int j = 0; j < matrize[i].length; j++) {
+                if(i==j){
+                    matrize[0][j] = 1;
+                }
+            }
+        }
+
+        for (int[] filas:matrize){
+            for(int columnas:filas){
+                System.out.println(columnas + " ");
+            }
+            System.out.println("\n");
         }
     }
 }
