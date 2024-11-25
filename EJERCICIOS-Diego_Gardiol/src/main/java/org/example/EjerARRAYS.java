@@ -21,7 +21,10 @@ public class EjerARRAYS {
     }
 
     public void ejer2(){
-      int[] numero = new int[5];
+      int[] numero = {1, 2, 3, 4, 5};
+
       
+
+
     }
 }
